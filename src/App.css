@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +13,75 @@
   color: white;
 }
 
-.App-link {
+h1 {
   color: #61dafb;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 320px;
+}
+
+.calculator-display {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.equation {
+  font-size: 16px;
+  color: #888;
+  min-height: 24px;
+  margin-bottom: 8px;
+}
+
+.result {
+  font-size: 32px;
+  color: #fff;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-number {
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.btn-operator {
+  background-color: #61dafb;
+  color: black;
+}
+
+.btn-clear {
+  background-color: #ff4444;
+  color: white;
+  grid-column: span 2;
+}
+
+.btn-equals {
+  background-color: #4CAF50;
+  color: white;
 }
